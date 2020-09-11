@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非任天堂官網-購物車</title>
+
+    <link rel="shortcut icon" href="images/icon.png">
+    <meta name="description" content="這是個參考任天堂官方網站臨摹出來的作品，喜歡請按讚！">
+ 
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="非任天堂官方網站(請勿下單)">
+    <meta property="og:image" content="https://www.nintendo.tw/apple-touch-icon-precomposed.png">
+    <meta property="og:description" content="這是個參考任天堂官方網站臨摹出來的作品，喜歡請按讚！">
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bae8f45623.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="SCSS/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+            <h1 class="m-0"><a href="index.html" class="icon">Nintendo 任天堂</a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav w-100 align-items-center text-center border">
+                <li class="nav-item active w-25">
+                  <a class="nav-link p-0 border-right" href="index.html"><i class="fas fa-home pr-2"></i>首頁</a>
+                </li>
+                <li class="nav-item w-25">
+                  <a class="nav-link p-0 border-right" href="game.html"><i class="fas fa-gamepad pr-2"></i>遊戲軟體</a>
+                </li>
+                <li class="nav-item w-25">
+                    <a class="nav-link p-0 border-right" href="cart.html"><i class="fas fa-shopping-cart pr-2"></i>購物車</a>
+                </li>
+                <li class="nav-item w-25">
+                    <a class="nav-link p-0 border-right" href="login.html"><i class="fas fa-user pr-2"></i>登入</a>
+                </li>
+            </div>
+          </nav>
+    </header>
+
+    <section class="cartpage">
+      <div class="container bg-light px-5">
+        <div class="row justify-content-between">
+          <div class="col-sm-7 py-5">
+            <h2 class="h1 cart-title border-left pl-3">您的購物車</h2>
+            <div class="form-row align-items-center pt-3 pb-5 border-bottom">
+              <div class="col-md-3"><img src="images/game5.png" alt="" class="w-100"></div>
+              <div class="col-md-4 pt-3">
+                <h4>集合啦！動物森友會</h4>
+              </div>
+              <div class="col-md-2 pt-3">
+                <select class="custom-select">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="col-md-3 d-flex pt-3">
+                <h5 class="px-md-3">NT$1,688</h5>
+                <a class="btn pt-0"><i class="fas fa-trash fa-lg"></i></a>  
+              </div>
+            </div>
+            
+            <div class="form-row align-items-center py-5 border-bottom">
+              <div class="col-md-3"><img src="images/switch.jpg" alt="" class="w-100"></div>
+              <div class="col-md-4 pt-3">
+                <h4>Nintendo Switch</h4>
+              </div>
+              <div class="col-md-2 pt-3">
+                <select class="custom-select">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="col-md-3 d-flex pt-3">
+                <h5 class="px-md-3">NT$9,780</h5>
+                <a class="btn pt-0"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 pt-5 pb-5">
+            <div class="sticky-top">
+              <h2 class="border-bottom text-center pb-3">訂單摘要</h2>
+              <div class="d-flex justify-content-between">
+                <h6>小計</h6>
+                <h6>11,468</h6>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h6>運費</h6>
+                <h6>120</h6>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5>總計</h5>
+                <h5>11,588</h5>
+              </div>
+              <a class="btn btn-block p-0"><h2 class="pay-button">結帳</h2></a>
+            </div>   
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <div class="swiper-container p-5 ">
+      <h2 class="pb-3 text-center">您可能會喜歡</h2>
+      <div class="swiper-wrapper text-center font-weight-bolder">
+        <div class="swiper-slide"><a href="#"><img src="images/game1.png" style="width: 100%;" alt=""></a>紙片瑪利歐：摺紙國王</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game2.png" style="width: 100%;" alt=""></a>世界遊戲大全51</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game3.png" style="width: 100%;" alt=""></a>九龍妖魔學園紀 ORIGIN OF ADVENTURE</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game4.png" style="width: 100%;" alt=""></a>異度神劍 終極版</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game5.png" style="width: 100%;" alt=""></a>集合啦！動物森友會</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game6.png" style="width: 100%;" alt=""></a>健身環大冒險</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game7.png" style="width: 100%;" alt=""></a>寶可夢 盾</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game8.png" style="width: 100%;" alt=""></a>寶可夢 劍</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game9.png" style="width: 100%;" alt=""></a>路易吉洋樓３</div>
+        <div class="swiper-slide"><a href="#"><img src="images/game10.png" style="width: 100%;" alt=""></a>薩爾達傳說 織夢島</div>
+      </div>
+    </div>
+
+    <section class="footer">
+      <div class="container-fluid py-5 bg-main">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="text-white font-weight-bold pb-3 pb-md-0">訂閱我們獲取最新消息</h3>
+                </div>
+                <div class="col-md-6">
+                  <label class="sr-only" for="email">Email</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text bg-transparent border"><i class="far fa-envelope fa-lg text-white"></i></div>
+                    </div>
+                    <input type="email" class="form-control" id="email">
+                    <button type="submit" class="btn btn-transparent"><i class="fas fa-arrow-right text-dark"></i></button>
+                  </div>
+                </div>
+              </div>          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-light py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-6 text-center text-md-left">
+              <h5 class="pb-2 font-weight-bold">關於我們</h5>
+              <h6><a href="#">公司簡介</a></h6>
+              <h6 class="pb-3"><a href="#">聯絡我們</a></h6>
+            </div>
+            <div class="col-md-3 col-6 text-center text-md-left">
+              <h5 class="pb-2 font-weight-bold">據點分布</h5>
+              <h6><a href="#">實體門市</a></h6>
+              <h6><a href="#">網路門市</a></h6>
+            </div>
+            <div class="col-md-3 col-6 text-center text-md-left">
+              <h5 class="pb-2 font-weight-bold">語言</h5>
+              <h6><a href="#">中文版</a></h6>
+              <h6><a href="#">English</a></h6>
+              <h6 class="mb-0"><a href="#">日本語</a></h6>
+            </div>
+            <div class="col-md-3 col-6 text-center text-md-left">
+              <h5 class="pb-2 font-weight-bold">社群網站</h5>
+              <h6><a href="#"><i class="fab fa-facebook mr-2"></i>Facebook</a></h6>
+              <h6><a href="#"><i class="fab fa-instagram mr-2"></i>Instagram</a></h6>
+              <h6 class="mb-0"><a href="#"><i class="fab fa-twitter mr-2"></i>Twitter</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="text-center pt-4">© Copyright 2020 Nintendo ALL Rights Reserved</h6>
+      <div class="topbutton">
+        <a href="#"><img src="images/top.jpg" alt=""></a>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        //initialize swiper when document ready
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+          },
+          speed: 1000,
+          loop: true,
+          slidesPerView: 2,
+          spaceBetween: 20,
+          breakpoints: {
+          // when window width is >= ...px
+            576: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            992: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            },
+          }
+        });
+      });
+    </script>
+
+
+</body>
+</html>

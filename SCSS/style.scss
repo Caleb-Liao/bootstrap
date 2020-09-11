@@ -1,0 +1,329 @@
+body{
+    font-family: Microsoft JhengHei;
+    font-size: 14px;
+}
+
+$main-color: #ec0508;
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-main{
+    background-color: $main-color;
+}
+
+.text-main{
+    color: $main-color;
+}
+
+.navbar{
+    .icon{
+        background-image: url(../images/Nintendo.png);
+        background-size: cover;
+        display: block;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 185px;
+        height: 75px;
+    }
+
+    .nav-item{
+        @media(max-width: 991px){
+            .border-right{
+                border-right: 0 !important;
+            }
+        }
+    }
+
+    .nav-link{
+        height: 74px;
+        line-height: 74px;
+        border-bottom: 2px solid transparent;
+        &:hover, &:active{
+            color: $main-color !important;
+            border-bottom: 2px solid $main-color;
+            transition: all .5s;
+        } 
+    }      
+}
+
+.banner{
+    .carousel-item{
+        @media(max-width: 768px) {
+            .big {
+              display: none !important;
+            }
+        }
+          
+        @media(min-width: 768px) {
+            .small {
+              display: none !important;
+            }
+        }
+    }
+
+    .carousel-control-prev-icon{
+        background-color: #01b9e7;
+        height: 100%;
+        position: absolute;
+        width: 40%;
+        left: -40%;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .carousel-control-next-icon{
+        background-color: #fc5947;
+        height: 100%;
+        position: absolute;
+        width: 40%;
+        right: -40%;
+        border-radius: 0 50px 50px 0;
+    }
+
+    .news{
+        text-decoration: none;
+        color: black;
+
+        &:hover, &:active{
+            color: $main-color !important;
+            transition: all .5s;
+        } 
+    }
+
+    .container-fluid{
+        position: relative;
+    }
+
+    .container-fluid .line-left, .container-fluid .line-right{  
+        position: absolute;
+        top:50%;
+        width: 20%;
+        height: 2px;
+        border-top: 1px solid $main-color ;
+    }
+
+    .container-fluid .line-right{
+        right:15px;
+    }
+}
+
+.topic{
+    .line{
+        background-color: $main-color;
+        margin: 0 auto;
+        width: 1.5%;
+        height: 3px;
+    }
+
+    .news{       
+        position: relative;
+        &:hover{
+            transform : scale(1.01);
+            transition: all .5s;
+        }
+        p{
+            line-height: 2;
+            @media(max-width: 768px){
+                line-height: 1.5;    
+            }
+        }
+        @media(max-width: 768px){
+            position: static;    
+        }
+    }    
+
+    .vertical{
+        writing-mode: vertical-rl;
+        @media(max-width: 768px){
+           writing-mode: horizontal-tb;    
+        }
+    }
+    
+
+    .news-img1{
+        position: absolute;
+        top: 0; bottom: 0;
+        background-image: url(../images/topic1.jpg);
+        @media(max-width: 768px){
+            position: static;
+            background-image: url(../images/topic1-2.jpg);
+            height: 200px;
+            background-position: bottom center;    
+        }
+    }
+
+    .news-img2{
+        position: absolute;
+        top: 0; bottom: 0;
+        background-image: url(../images/topic2.jpg);
+        @media(max-width: 768px){
+            position: static;
+            height: 200px;
+            background-position: bottom center;    
+        }
+    }
+}
+
+.pickup{
+    .line{
+        background-color: $main-color;
+        margin: 0 auto;
+        width: 1.5%;
+        height: 3px;
+    }
+
+    .card{
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0 2px $main-color;
+            transition: all .5s;
+        }
+    }
+}
+
+.game{
+    .list-group-item.active{
+        background-color: $main-color;
+        border-color: $main-color;
+    }
+
+    .heart{
+        color: $main-color;
+        font-weight: bolder;
+    }
+
+    .btn-heart:hover{
+        .fa-heart{
+            font-weight: bolder;
+            color: $main-color;
+        }
+    }
+
+    
+
+    .card{
+        &:hover{
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+            transition: all .5s;
+        }
+    }
+}
+
+.cartpage{
+    .col-sm-7>h2.border-left{
+        border-left:5px solid $main-color !important;
+    }
+
+    .form-row{
+        padding-right: 20px;
+        &:hover{
+            transform: scale(1.01);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .pay-button{
+        padding: 10px;
+        border: 3px solid $main-color;
+        color: $main-color;
+        font-weight: bolder;
+        &:hover,&:active{
+            color:white;
+            background-color: $main-color;
+        }
+    }
+
+    .fa-trash{
+        &:hover,&:active{
+            color: $main-color;
+        }
+    }
+
+    .swiper-container {
+        max-width: 90%;
+    }
+}
+
+.login{
+    form>h2.border-left{
+        border-left:5px solid $main-color !important;
+    }
+
+    .form-control{ //覆蓋籃框       
+        &:focus{
+            border:1px solid #ccc;
+            box-shadow: none;
+        }
+    }
+
+    .form-group{
+        button{
+            border-radius: none;
+        }
+    }
+
+    .btn-facebook{
+        background-color: rgb(59, 87, 157);
+        &:hover, &:active{
+            background-color: darken(rgb(59, 87, 157), 5%);
+        }
+    }
+
+    .btn-google{
+        background-color: #DEDEDE;
+        &:hover, &:active{
+            background-color: darken(#DEDEDE, 5%);
+        }
+    }
+
+    .btn-twitter{
+        background-color: rgb(0, 172, 238);
+        &:hover, &:active{
+            background-color: darken(rgb(0, 172, 238), 5%);
+        }
+    }
+}
+
+.footer{
+    .form-control{
+        border: 0;
+        position: relative;
+        &:focus{    
+            box-shadow: none;
+        }
+    }
+
+    .input-group-text{
+        border-radius: 0;
+    }
+
+    .input-group button{
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    a{
+        color:$main-color;
+        &:hover, &:active{
+            text-decoration: none;
+            font-weight: bolder;
+            color: $main-color;
+        }
+    }
+    
+    .topbutton img{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}

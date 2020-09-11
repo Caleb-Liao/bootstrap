@@ -1,0 +1,338 @@
+body {
+  font-family: Microsoft JhengHei;
+  font-size: 14px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-main {
+  background-color: #ec0508;
+}
+
+.text-main {
+  color: #ec0508;
+}
+
+.navbar .icon {
+  background-image: url(../images/Nintendo.png);
+  background-size: cover;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 185px;
+  height: 75px;
+}
+
+@media (max-width: 991px) {
+  .navbar .nav-item .border-right {
+    border-right: 0 !important;
+  }
+}
+
+.navbar .nav-link {
+  height: 74px;
+  line-height: 74px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:active {
+  color: #ec0508 !important;
+  border-bottom: 2px solid #ec0508;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+@media (max-width: 768px) {
+  .banner .carousel-item .big {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner .carousel-item .small {
+    display: none !important;
+  }
+}
+
+.banner .carousel-control-prev-icon {
+  background-color: #01b9e7;
+  height: 100%;
+  position: absolute;
+  width: 40%;
+  left: -40%;
+  border-radius: 50px 0 0 50px;
+}
+
+.banner .carousel-control-next-icon {
+  background-color: #fc5947;
+  height: 100%;
+  position: absolute;
+  width: 40%;
+  right: -40%;
+  border-radius: 0 50px 50px 0;
+}
+
+.banner .news {
+  text-decoration: none;
+  color: black;
+}
+
+.banner .news:hover, .banner .news:active {
+  color: #ec0508 !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.banner .container-fluid {
+  position: relative;
+}
+
+.banner .container-fluid .line-left, .banner .container-fluid .line-right {
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  height: 2px;
+  border-top: 1px solid #ec0508;
+}
+
+.banner .container-fluid .line-right {
+  right: 15px;
+}
+
+.topic .line {
+  background-color: #ec0508;
+  margin: 0 auto;
+  width: 1.5%;
+  height: 3px;
+}
+
+.topic .news {
+  position: relative;
+}
+
+.topic .news:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.topic .news p {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .topic .news p {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .topic .news {
+    position: static;
+  }
+}
+
+.topic .vertical {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+@media (max-width: 768px) {
+  .topic .vertical {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.topic .news-img1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url(../images/topic1.jpg);
+}
+
+@media (max-width: 768px) {
+  .topic .news-img1 {
+    position: static;
+    background-image: url(../images/topic1-2.jpg);
+    height: 200px;
+    background-position: bottom center;
+  }
+}
+
+.topic .news-img2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url(../images/topic2.jpg);
+}
+
+@media (max-width: 768px) {
+  .topic .news-img2 {
+    position: static;
+    height: 200px;
+    background-position: bottom center;
+  }
+}
+
+.pickup .line {
+  background-color: #ec0508;
+  margin: 0 auto;
+  width: 1.5%;
+  height: 3px;
+}
+
+.pickup .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 2px #ec0508;
+          box-shadow: 0 2px #ec0508;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.game .list-group-item.active {
+  background-color: #ec0508;
+  border-color: #ec0508;
+}
+
+.game .heart {
+  color: #ec0508;
+  font-weight: bolder;
+}
+
+.game .btn-heart:hover .fa-heart {
+  font-weight: bolder;
+  color: #ec0508;
+}
+
+.game .card:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.cartpage .col-sm-7 > h2.border-left {
+  border-left: 5px solid #ec0508 !important;
+}
+
+.cartpage .form-row {
+  padding-right: 20px;
+}
+
+.cartpage .form-row:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cartpage .pay-button {
+  padding: 10px;
+  border: 3px solid #ec0508;
+  color: #ec0508;
+  font-weight: bolder;
+}
+
+.cartpage .pay-button:hover, .cartpage .pay-button:active {
+  color: white;
+  background-color: #ec0508;
+}
+
+.cartpage .fa-trash:hover, .cartpage .fa-trash:active {
+  color: #ec0508;
+}
+
+.cartpage .swiper-container {
+  max-width: 90%;
+}
+
+.login form > h2.border-left {
+  border-left: 5px solid #ec0508 !important;
+}
+
+.login .form-control:focus {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login .form-group button {
+  border-radius: none;
+}
+
+.login .btn-facebook {
+  background-color: #3b579d;
+}
+
+.login .btn-facebook:hover, .login .btn-facebook:active {
+  background-color: #344d8a;
+}
+
+.login .btn-google {
+  background-color: #DEDEDE;
+}
+
+.login .btn-google:hover, .login .btn-google:active {
+  background-color: #d1d1d1;
+}
+
+.login .btn-twitter {
+  background-color: #00acee;
+}
+
+.login .btn-twitter:hover, .login .btn-twitter:active {
+  background-color: #009ad5;
+}
+
+.footer .form-control {
+  border: 0;
+  position: relative;
+}
+
+.footer .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer .input-group-text {
+  border-radius: 0;
+}
+
+.footer .input-group button {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.footer .input-group button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer a {
+  color: #ec0508;
+}
+
+.footer a:hover, .footer a:active {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #ec0508;
+}
+
+.footer .topbutton img {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
